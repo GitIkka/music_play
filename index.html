@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>サンプル</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <!--現在の再生位置を表示するためのonload-->
+  <body onload="getDuration()">
+    <video id="video">
+      <source src="items/se_maoudamashii_onepoint26.mp3" />
+    </video>
+    <h1>Music by 魔王魂(ワンポイント26)</h1>
+    <!--再生ボタン-->
+    <div class="music_play">
+      <input type="button" value="再生" onClick="playVideo()" /><br />
+      現在（秒）：<span id="ichi">0</span><br />
+      <span id="kanryou"></span>
+    </div>
+    <script type="text/javascript" src="js/music_play.js"></script>
+  </body>
+</html>
